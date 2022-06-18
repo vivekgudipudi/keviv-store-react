@@ -1,0 +1,75 @@
+.container-sign-in{
+    display: flex;
+    margin-top: var(--md);
+    margin-bottom: var(--md);
+
+}
+
+.form-sign-in{
+    height: max-content;
+    width:20rem;
+    border:1px solid var(--grey-100);
+
+}
+
+.heading-sign-in{
+    padding: var(--sm) var(--md);
+    text-align: center;
+    letter-spacing: 0.125rem;
+    background-color: var(--grey-100);
+}
+
+.sub-heading-sign-in{
+    text-align: center;
+    padding: var(--xs);
+    background-color: var(--grey-100);
+
+}
+
+.input-box-sign-in{
+    padding-top: var(--md);
+    padding-bottom: var(--xs);
+}
+
+.input-box-sign-in input{
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    padding: var(--xs) var(--sm);
+    margin-bottom: var(--sm);
+    border: 1px solid var(--light-grey);
+    border-radius: 2px;
+}
+
+.btn-sign-in{
+    width: 100%;
+    box-sizing: border-box;
+    padding:var(--sm) var(--md);
+    margin: 0;
+    border-radius: 0;
+    background-color: var(--text-color);
+}
+.btn-sign-in:hover{
+    background-color: var(--text-color-dark);
+}
+.login-text{
+    font-size: 0.8rem;
+    text-align: center;
+    padding: var(--xs);
+}
+
+.login-text span{
+    color: var(--blue-link);
+}
+
+.login-text-other-ways{
+    font-size: 0.8rem;
+    text-align: center;
+    padding: var(--xs) 0;
+}
+
+.auth-icon .google-icon{
+    margin: var(--sm);
+    cursor: pointer;
+
+}

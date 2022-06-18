@@ -1,0 +1,7 @@
+.wishlist-container{
+    width: 85%;
+}
+
+.wishlist-icon{
+    color: var(--danger-color);
+}

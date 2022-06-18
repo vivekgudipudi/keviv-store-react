@@ -1,51 +1,155 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://kevivui.netlify.app/CSS/utilities.css');
+/* imports of all CSS files */
+@import url('/src/index.css');
+@import url('/src/Styles/Auth.css');
+@import url('/src/Styles/Cart.css');
+@import url('/src/Styles/HomePage.css');
+@import url('/src/Styles/ProductListing.css');
+@import url('/src/Styles/WishList.css');
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  /* --xs:8px;
+  --sm:16px;
+  --md:24px;
+  --lg:32px;
+  --xl:40px;
+  --xxl:64px; */
+
+  --xs: 0.5rem;
+  --sm: 1rem;
+  --md: 1.5rem;
+  --lg: 2rem;
+  --xl: 2.5rem;
+  --xxl: 4rem;
+
+
+  --light: 300;
+  --regular: 400;
+  --semi-bold: 500;
+  --bold: 700;
+
+  --grey-100:#f3f4f6;
+  --blue-link:#2997ff;
+  --text-color-dark:#121C2A
+
+}
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+hr{
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li{
+  list-style: none;
 }
 
-.App-header {
-  background-color: #22201c;
-  min-height: 100vh;
+/* text font-weight */
+
+.light{
+  font-weight: var(--light);
+}
+
+.regular{
+  font-weight: var(--regular);
+}
+
+.semi-bold{
+  font-weight: var(--semi-bold);
+}
+
+.bold{
+  font-weight: var(--bold);
+}
+
+/* text font-size */
+
+.t-xs{
+  font-size: var(--xs);
+  line-height: var(--sm);
+}
+
+.t-sm{
+  font-size: var(--sm);
+  line-height: var(--md);
+}
+
+.t-md{
+  font-size: var(--md);
+  line-height: var(--lg);
+}
+
+.t-lg{
+  font-size: var(--lg);
+  line-height: var(--xl);
+}
+
+.t-xl{
+  font-size:3rem;
+  line-height: var(--xxl);
+}
+
+/* flex classes */
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+.flex-column{
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.justify-center{
   justify-content: center;
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.justify-end{
+  justify-content: flex-end;
+}
+.justify-start{
+  justify-content: flex-start;
+}
+.align-center{
+  align-content: center;
+}
+.align-end{
+  align-content: flex-end;
+}
+.align-start{
+  align-content: flex-start;
+}
+.justify-sb{
+  justify-content: space-between;
+}
+.justify-sa{
+  justify-content: space-around;
 }
 
-.brand-title {
-  font-size: 3rem;
-  color: #d9d9d9;
+
+::-webkit-scrollbar {
+  border-radius: 0;
+  max-height: 12px;
+  max-width: 12px;
 }
 
-.brand-title span {
-  color: #ffde59;
+::-webkit-scrollbar-button {
+  display: none;;
 }
 
-.brand-description {
-  font-size: 1.4rem;
-}
-
-.links {
-  display: flex;
-}
-
-.links a {
-  color: #d9d9d9;
-  font-size: 1.2rem;
-  margin: 1rem;
+::-webkit-scrollbar-thumb {
+  background-color: #111827;
+  border-radius: 0;
 }
