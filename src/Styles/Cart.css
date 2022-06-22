@@ -12,6 +12,7 @@
 }
 .cart-details{
     box-sizing: border-box;
+    width: 12rem;
 }
 .cart-quantity-box{
     width:5rem;
@@ -46,10 +47,10 @@
 }
 
 .cart-sidebar{
-    flex:0 1 25rem;
-    min-width: 25rem;
+    flex:0 1 23rem;
+    /* min-width: 20rem; */
     height: max-content;  
-    margin-left: 0;
+    margin-left: var(--sm);
 }
 
 .cart-total-price{

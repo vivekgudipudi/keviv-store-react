@@ -3,5 +3,11 @@
 }
 
 .wishlist-icon{
+    color: var(--background-color);
+    font-size: var(--md);
+}
+
+.wishlist-icon-selected{
     color: var(--danger-color);
+    font-size: var(--md);
 }

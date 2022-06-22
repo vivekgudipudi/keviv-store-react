@@ -1,5 +1,4 @@
 import '../App.css';
-import { NavBar } from '../components/NavBar';
 import { NavBarBrands } from '../components/NavBarBrands';
 import carousel from '../Assets/carousel.jpg';
 import {NavLink } from "react-router-dom";
@@ -15,8 +14,7 @@ export const Home = ()=>{
     
     return(
     <>
-        <NavBar />
-        <hr/>
+        
         <NavBarBrands/>
         
         <main>

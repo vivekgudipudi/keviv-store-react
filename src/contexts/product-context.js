@@ -84,7 +84,7 @@ const ProductProvider = ({children}) => {
 
       const sortedData = getSortedData(data, sortBy);
       const filteredData = getFilteredData(sortedData, {toggleBrand});
-      const ratedData = getRatedData(filteredData,{toggleRating})
+      const ratedData = getRatedData(filteredData,{toggleRating});
 
 
     return(
