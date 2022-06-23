@@ -19,9 +19,6 @@ export const NavBar = ()=> {
         setIsLoggedIn(!isLoggedIn);
         
     }
-    // else{
-    //     // localStorage.clear()
-    // }
     }
 
     return(
