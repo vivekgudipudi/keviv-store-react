@@ -3,14 +3,11 @@ import axios from 'axios';
 import {  WishListReducer } from "../reducers/wishlist-reducer";
 import { useNavigate } from "react-router-dom"
 import { useAuth } from "./auth-context";
-import { UseCart } from "./cart-context";
-
 
 
 const WishListContext = createContext([]);
 
 const WishListProvider = ({children}) =>{
-    const { cart } = UseCart();
 
     const [{wishlist},dispatch] = useReducer(WishListReducer, {
         wishlist : []
