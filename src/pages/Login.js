@@ -48,7 +48,7 @@ export const Login = ()=> {
                 </div><br/>
                 <div className="btn-box-sign-in">
                     <input type = "submit" value = "SIGN IN AS GUEST" onClick={(e)=> {
-                        setCredentials((a)=>({...a,email : "vivekgudipudi@gmail.com",password : "vivekgudipudi"}))
+                        setCredentials((a)=>({...a,email : "test@gmail.com",password : "testing"}))
                     }} className="btn btn-sign-in"/>
                 </div>
                 <div className="login-text"> 
