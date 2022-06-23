@@ -1,0 +1,114 @@
+.wrapper{
+    width: 100%;
+}
+
+.side-bar-container{
+    flex:0 1 14rem;
+    min-width: 14rem;
+    height: max-content;  
+    margin-left: var(--md);
+}
+.product-container{
+    flex: 0 2 auto;
+    min-width: 16rem;
+}
+
+.side-bar-heading{
+    text-align: center;
+    padding: var(--sm);
+    background-color: var(--grey-100);
+    margin-top: var(--md);
+    letter-spacing: 0.125rem;
+}
+
+.filter-heading{
+    font-weight: var(--semi-bold);
+    padding: var(--xs);
+    background-color: var(--grey-100);
+}
+.filter-heading-top{
+    margin-top: var(--md);
+}
+.filter-content{
+    text-align: center;
+    padding: var(--xs);
+
+}
+.input-slider{
+    width: 75%;
+}
+
+.filter-check-box{
+    text-align: left;
+    padding: 0.25rem 0 0.25rem var(--md);
+}
+
+.filter-radio{
+    text-align: left;
+    padding: 0.25rem 0 0.25rem var(--md);
+}
+.clear-button-content{
+    text-align: center;
+    background-color: var(--grey-100);
+}
+.clear-button{
+    width: 70%;
+    box-sizing: border-box;
+    padding:var(--xs) var(--sm);
+    margin: var(--xs);
+    border-radius: 0.25rem;
+    color: var(--text-color);
+    background-color: var(--dark-grey);
+    background-color: #9ca3af;
+}
+.product-container{
+    margin: var(--md) 0 0 var(--md);
+    background-color: var(--grey-100);
+    flex-wrap: wrap;
+    width: fit-content;
+}
+.card-ecom-memory{
+    padding-bottom: var(--xs);
+}
+.product-container .btn{
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.card-ecom-badge{
+    background-color:var(--text-color)
+}
+.card-ecom-price-current{
+    font-size: var(--sm);
+    color: var(--danger-color);
+}
+.card-img-ecom{
+    
+    width: 17rem;
+    height:  16rem;
+
+}
+.card-footer{
+    padding: 0;
+}
+
+.card{
+    height: max-content;
+    margin: var(--sm);
+    min-height: 25rem;
+    max-width: 17rem;
+    
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .side-bar-container{
+        flex:0 1 85%;
+    }
+    .product-container{
+        margin-left: 0;
+    }
+  }
