@@ -9,7 +9,7 @@ const ProductProvider = ({children}) => {
 
     const [{ sortBy, toggleBrand,toggleRating },dispatch] = useReducer(ProductReducer, {
         sortBy: null,
-        toggleBrand : "",
+        toggleBrand : [],
         toggleRating : 5
       });
 
@@ -43,25 +43,20 @@ const ProductProvider = ({children}) => {
         return data;
       };
 
-      const getFilteredData = (data,{ toggleBrand }) => {
+      const getFilteredData = (data,{toggleBrand}) => { console.log(toggleBrand)
+        let newFiltered = [];
+        let brandFilter;
+        if(toggleBrand.length !== 0 ){
+          toggleBrand.map((brand)=>{
+            brandFilter= data.filter(
+              (item)=>item.brand.toLowerCase() === brand.toLowerCase()
+            );
+            newFiltered = [...newFiltered,...brandFilter];
+          });
+          return newFiltered;
+        }
+        return data
         
-          if(toggleBrand === 'APPLE'){
-            return data.filter((a)=> a.brand === 'Apple')
-          }
-          if(toggleBrand === 'ONEPLUS'){
-            return data.filter((a)=>a.brand === 'Oneplus')
-          }
-          if(toggleBrand === 'SAMSUNG'){
-            return data.filter((a)=>a.brand === 'Samsung')
-          }
-          if(toggleBrand === 'NOTHING'){
-            return data.filter((a)=>a.brand === 'Nothing')
-          }
-          if(toggleBrand === 'GOOGLE'){
-            return data.filter((a)=>a.brand === 'Google')
-          }
-
-          return data
       };
 
       const getRatedData = (data,{toggleRating})=>{

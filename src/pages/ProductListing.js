@@ -40,23 +40,23 @@ export const ProductListing = ()=> {
             </div>
             <div className="filter-content">
                 <div className="filter-check-box">
-                    <input type="radio" onChange={() => dispatch({ type: "TOGGLE_CATEGORY",payload : 'APPLE' })} checked={toggleBrand === "APPLE"}/>
+                    <input type="checkbox" onChange={() => dispatch({ type: "TOGGLE_CATEGORY",payload : 'APPLE' })} checked={toggleBrand.includes("APPLE")}/>
                     <label>Apple</label>
                 </div>
                 <div className="filter-check-box">
-                    <input type="radio"onChange={() => dispatch({ type: "TOGGLE_CATEGORY",payload : 'GOOGLE' })} checked={toggleBrand === "GOOGLE"}/>
+                    <input type="checkbox"onChange={() => dispatch({ type: "TOGGLE_CATEGORY",payload : 'GOOGLE' })} checked={toggleBrand.includes("GOOGLE")}/>
                     <label>Google</label>
                 </div>
                 <div className="filter-check-box">
-                    <input type="radio" onChange={() => dispatch({ type: "TOGGLE_CATEGORY",payload : 'NOTHING' })} checked={toggleBrand === "NOTHING"}/>
+                    <input type="checkbox" onChange={() => dispatch({ type: "TOGGLE_CATEGORY",payload : 'NOTHING' })} checked={toggleBrand.includes("NOTHING")}/>
                     <label>Nothing</label>
                 </div>
                 <div className="filter-check-box">
-                    <input type="radio" onChange={() => dispatch({ type: "TOGGLE_CATEGORY",payload : 'ONEPLUS' })} checked={toggleBrand === "ONEPLUS"}/>
+                    <input type="checkbox" onChange={() => dispatch({ type: "TOGGLE_CATEGORY",payload : 'ONEPLUS' })} checked={toggleBrand.includes("ONEPLUS")}/>
                     <label>Oneplus</label>
                 </div>
                 <div className="filter-check-box">
-                    <input type="radio" id="" onChange={() => dispatch({ type: "TOGGLE_CATEGORY",payload : 'SAMSUNG' })} checked={toggleBrand === "SAMSUNG"}/>
+                    <input type="checkbox" id="" onChange={() => dispatch({ type: "TOGGLE_CATEGORY",payload : 'SAMSUNG' })} checked={toggleBrand.includes("SAMSUNG")}/>
                     <label>Samsung</label>
                 </div >
             </div>

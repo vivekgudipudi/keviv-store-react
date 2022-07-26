@@ -7,10 +7,11 @@ export const ProductReducer = (state, action) => {
           sortBy: action.payload
         };
         }
-      case "TOGGLE_CATEGORY" : {
+      case "TOGGLE_CATEGORY" : { 
+        console.log(action.payload)
         return{
             ...state,
-            toggleBrand : action.payload
+            toggleBrand : state.toggleBrand.includes(action.payload) ? state.toggleBrand.filter((ele)=> ele !== action.payload) : [...state.toggleBrand,action.payload]
         }
 
       }
@@ -25,7 +26,7 @@ export const ProductReducer = (state, action) => {
         return{
             ...state,
             sortBy: null,
-    toggleBrand : "",
+    toggleBrand : [],
     toggleRating : 5
         }
       }
